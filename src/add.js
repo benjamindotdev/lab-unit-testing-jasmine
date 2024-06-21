@@ -1,7 +1,4 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
-        return undefined;
-    }
-
-    return numOne + numTwo;
-}
+const add = (numOne, numTwo) =>
+  numOne == undefined || numTwo == undefined || numOne == NaN || numTwo == NaN
+    ? undefined
+    : numOne + numTwo;
